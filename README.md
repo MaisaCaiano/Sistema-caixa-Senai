@@ -1,1 +1,29 @@
 # Sistema-caixa-
+
+saida = False
+saldo = 0 
+while True: 
+    entrada = input("Dê uma entrada: ")
+    if entrada == "sair":
+        print("Encerrando")
+        saida == False
+    elif entrada == "saldo":
+        print(f"R${saldo} ")
+
+    elif entrada == 'deposito':
+        valor = float(input("Qual o valor a ser depositado? "))
+        if  valor > 0:
+            saldo += valor 
+            print(f"O deposito de R$ {valor} foi realizado")
+        
+        else:
+            print("O valor digitado está inválido")
+
+    elif entrada == 'saque':
+        sacar = float(input("Qual o valor a ser sacado? "))
+        if sacar > 0:
+             saldo -= sacar
+             print(f"O saque de R$ {sacar} foi realizado")
+        
+        else:
+            print("O valor digitado está inválido")
