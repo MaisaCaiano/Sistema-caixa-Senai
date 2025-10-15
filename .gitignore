@@ -19,7 +19,7 @@ while True:
 
     elif entrada == 'saque':
         sacar = float(input("Qual o valor a ser sacado? "))
-        if sacar > 0:
+        if sacar > 0 and sacar <= saldo:
              saldo -= sacar
              print(f"O saque de R$ {sacar} foi realizado")
         
