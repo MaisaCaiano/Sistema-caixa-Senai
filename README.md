@@ -1,5 +1,4 @@
 # Sistema-caixa-
-
 saida = False
 saldo = 0 
 while True: 
