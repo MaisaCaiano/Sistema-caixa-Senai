@@ -1,10 +1,11 @@
 saida = False
 saldo = 0 
-while True: 
+while not saida: 
     entrada = input("Dê uma entrada: ")
     if entrada == "sair":
         print("Encerrando")
-        saida == False
+        saida = True
+            
     elif entrada == "saldo":
         print(f"R${saldo} ")
 
@@ -23,5 +24,7 @@ while True:
              saldo -= sacar
              print(f"O saque de R$ {sacar} foi realizado")
         
+        else:
+            print("O valor digitado está inválido")        
         else:
             print("O valor digitado está inválido")
